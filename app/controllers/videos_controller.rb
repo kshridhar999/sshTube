@@ -3,6 +3,7 @@ class VideosController < ApplicationController
     def showAll
         render json: Video.all
     end
+    
     def showVid
         render json: Video.find(params[:id])
     end
